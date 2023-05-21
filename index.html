@@ -4,15 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts are placed before css files -->
+    <!-- link copied from google font after selecting all the ones needed -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Coiny&family=Sono:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Today I Learned App</title>
     <link rel="icon" href="./logo.png" />
     <!-- favicon for the website-->
   </head>
   <body>
     <header>
-      <
       <img src="./logo.png" alt="top-image" height="68" width="68" />
-      <h1>Today I learned</h1>
+      <h1 class="app-title">Today I learned</h1>
       <button>share a fact</button>
     </header>
 
@@ -53,11 +61,11 @@
           <!-- unordered list (with Bullet Points) -->
           <li>
             <!-- List item-->
-            <p>
+            <p class="fact">
               React is being developed by Meta (formerly facebook)
-              <a href="https://opensource.fb.com/" target="_blank">(source)</a>
+              <a href="https://opensource.fb.com/" target="_blank">(Source)</a>
               <!-- target="_blank" opens the source in a new browser tab-->
-              <span>#technology#</span>
+              <span class="tag">#technology#</span>
             </p>
             <div>
               <button>👍 <strong>24</strong></button>
@@ -66,16 +74,16 @@
             </div>
           </li>
           <li>
-            <p>
+            <p class="fact">
               "Millennial dads spend 3 times as much time with their kids than
               their fathers spent with them. In 1982, 43% of fathers had never
               changed a diaper. Today, that number is down to 3%
               <a
                 href="https://www.mother.ly/parenting/millennial-dads-spend-more-time-with-their-kids"
                 target="_blank"
-                >(source)</a
+                >(Source)</a
               >
-              <span>#society#</span>
+              <span class="tag">#society#</span>
             </p>
             <div>
               <button>👍 <strong>11</strong></button>
